@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&display=swap');
+/*https://coolors.co/2b2d42-8d99ae-edf2f4-f3ca40-d90429*/
+
+body {
+    max-width: 800px;
+    margin: auto;
+}
+
+header, footer {
+    background-color: #D90429;
+    border-radius: 10px;
+    color: #EDF2F4;
+    padding: 10px;
+}
+
+h1, h2 {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    padding-left: 2em;
+}
+
+h2 {
+    font-size: 1.2em;
+    color: #2B2D42;
+}
+
+footer p{
+    margin: auto;
+    text-align: center;
+}
+
+#updated {
+    color: #F3CA40
+}
+
+footer a {
+    color: #EDF2F4
+}

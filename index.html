@@ -1,9 +1,36 @@
 <!doctype html>
 <html lang="en-us">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Joshua Beale</title>
+  <meta name="author" content="Joshua A. Beale">
+  <meta name="description" content="Landing page for WDD 230 assignments| Joshua Beale | BYUI">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
- <h1>Joshua Beale</h1>
+  <header>
+    <h1>Joshua A. Beale</h1>
+  </header>
+  <main>
+    <h2>WDD 230: Assignment Portal</h2>
+      <ul>
+        <li>Lesson 01: <a href=#>Course Assignment Portal</a></li>
+        <li>Lesson 02: <a href=#>Design Priciples Document</a></li>
+      </ul>
+    </main>
+  <footer>
+    <p>&#169 <span id="year"></span> | Joshua Beale | Utah | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+    <p id="updated"></p>
+    <script type="text/javascript">
+      //<!--
+      let year = new Date().getFullYear();
+      document.getElementById("year").innerHTML = year;
+
+      let savedate = document.lastModified;
+      document.getElementById("updated").innerHTML = "Last Updated: "+ savedate;
+      //-->
+    </script>
+  </footer>
 </body>
 </html>  
