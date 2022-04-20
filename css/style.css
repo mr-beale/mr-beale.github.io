@@ -1,9 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Merriweather+Sans:wght@700&display=swap');
 /*https://coolors.co/2b2d42-8d99ae-edf2f4-f3ca40-d90429*/
 
 body {
     max-width: 800px;
     margin: auto;
+    font-size: 20px;
+    font-family: 'Manrope', sans-serif;
+}
+
+img {
+    display: inline-block;
+    float: right;
+    padding: 20px;
 }
 
 header, footer {
