@@ -9,7 +9,7 @@ body {
 }
 
 img {
-    display: inline-block;
+    display: block;
     float: right;
     padding: 20px;
 }
