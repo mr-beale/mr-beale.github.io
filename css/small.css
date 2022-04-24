@@ -8,14 +8,27 @@ body {
     font-family: 'Manrope', sans-serif;
 }
 
-img {
+main, article {
+    border-left: 2px solid #EDF2F4;
+    border-right: 2px solid #EDF2F4;
+    padding: 10px;
+}
+
+.selfie {
     display: block;
     padding: 20px;
 }
 
+header {
+    border-radius: 10px 10px 0 0;
+}
+
+footer {
+    border-radius: 0 0 10px 10px;
+}
+
 header, footer {
     background-color: #D90429;
-    border-radius: 10px;
     color: #EDF2F4;
     padding: 10px;
 }
@@ -26,12 +39,22 @@ h1, h2 {
 
 h1 {
     font-size: 2em;
-    padding-left: 2em;
+    margin: auto, auto;
+    text-align: center;
 }
 
 h2 {
     font-size: 1.2em;
     color: #2B2D42;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+h2, h3 {
+    text-align: center;
 }
 
 footer p{
@@ -40,9 +63,24 @@ footer p{
 }
 
 #updated {
-    color: #F3CA40
+    color: #F3CA40;
 }
 
 footer a {
-    color: #EDF2F4
+    color: #EDF2F4;
+}
+
+article {
+    border-top: 2px solid #EDF2F4;
+    border-bottom: 2px solid #EDF2F4;
+    margin: 10px;
+}
+
+article img, article a, article p {
+    padding: 10px;
+}
+
+article p {
+    font-size: 0.8em;
+    text-align: justify;
 }

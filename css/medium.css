@@ -1,5 +1,14 @@
 @media (min-width: 32.5em) {
-    img {
+    body {
+        min-width: 800px;
+    }
+
+    .selfie {
         float: right;
+    }
+
+    .content_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }

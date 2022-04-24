@@ -1,26 +1,59 @@
-<!doctype>
+<! doctype>
 
 <html lang="en-us">
     <head>
         <title>Design Principles</title>
-
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
     </head>
 
     <body>
         <header>
-            
+            <h1>Design Priciples</h1>
         </header>
 
-        <body>
-            <ul>
-                <li>Hick's Law</li>
-                <li>White Space and Clean Design</li>
-                <li>Fitt's Law</li>
-            </ul>
-        </body>
+        <main class="content_grid">
+            <article class="first">
+                <h2>Hick's Law</h2>
+                <h3>Apple</h3>
+                <a href="http://apple.com">apple.com</a>
+                <img alt="example of Hick's Law" src="images/apple.jpg">
+                <p>Apple's Home page presents user's with essentially 3 choices; "Learn More", "Buy", or scroll to the next product.
+                    Generally only one product is shown on the screen at the time making the decision even easier.
+                    It doesn't take long for the user to decide which link they're going to follow.
+                </p>
+            </article>
+
+            <article class="second">
+                <h2>White Space & Clean Design</h2>
+                <h3>Bespoke Post</h3>
+                <a href="http://bespokepost.com">bespokepost.com</a>
+                <img alt="example of White space and Clean design Law" src="images/bespoke.jpg">
+                <p>The use of whitespace by Bespoke Post creates a feeling of organization and sophisticaiton.
+                    The minimalistic design of the site makes the content easy to find and read. The purpose of the site is clear.
+                </p>
+            </article>
+
+            <article class="third">
+                <h2>Fitt's Law</h2>
+                <h3>FabFitFun</h3>
+                <a href="http://fabfitfun.com">fabfitfun.com</a>
+                <img alt="example of Fitt's Law" src="images/fff.jpg">
+                <p>The button, "Get the Box", spans the width of the screen and was placed right where my thumb
+                    naturally falls when using my mobile devices. The size of the button and it's placement accomodate
+                    a range of hand sizes and screen sizes making it easy to reach for any user on any device.
+                </p>
+            </article>
+
+        </main>
 
         <footer>
-
-        </footer>
+            <p>&#169; <span id="year"></span> | Joshua Beale | Utah | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+            <p id="updated"></p>
+          </footer>
+      
+          <script src="scripts/scripts.js"></script>
     </body>
 </html>
