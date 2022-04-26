@@ -2,7 +2,7 @@
 /*https://coolors.co/2b2d42-8d99ae-edf2f4-f3ca40-d90429*/
 
 body {
-    max-width: 800px;
+    max-width: 500px;
     margin: auto;
     font-size: 20px;
     font-family: 'Manrope', sans-serif;
@@ -17,6 +17,11 @@ main, article {
 .selfie {
     display: block;
     padding: 20px;
+}
+
+.content_grid {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 header {
@@ -39,7 +44,7 @@ h1, h2 {
 
 h1 {
     font-size: 2em;
-    margin: auto, auto;
+    margin: auto;
     text-align: center;
 }
 
