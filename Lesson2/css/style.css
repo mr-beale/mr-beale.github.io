@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar&family=Work+Sans:wght@600&display=swap');
+
+body {
+    font-family: "Akshar", Arial, Helvetica;
+    font-size: 1.2em;
+}
+
+header {
+    padding: 0 10px;
+    margin: 0 auto;
+    width: 800px;
+    background-color: #3066BE;
+    text-align: center;
+    color: #fff;
+}
+
+nav {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background-color: #FCF7F8;
+    padding: 20px;
+    color: black
+}
+
+nav ul li a:hover {
+    background-color: #CED3DC;
+}
+
+main {
+    width: 800px;
+    margin: -17px auto;
+    padding: 10px;
+    background-color: #ccc;
+}
+
+.color {
+    width: 80%;
+    height: 40px;
+    margin: auto;
+    text-align: center;
+}
+
+.primary {
+    background-color: #3066BE;
+}
+
+.background {
+    background-color: #FCF7F8;
+}
+
+.headings {
+    background-color: #EC4E20;
+}
+
+.accent-1 {
+    background-color: #CED3DC;
+}
+
+.accent-2 {
+    background-color: #ABA9C3;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Work Sans', sans-serif;
+}
