@@ -27,11 +27,7 @@
     }
 
     main {
-        max-width: 600px;
-        margin: auto;
-    }
-
-    header, footer {
         max-width: 800px;
+        margin: auto;
     }
 }

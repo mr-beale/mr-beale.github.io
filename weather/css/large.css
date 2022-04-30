@@ -1,10 +1,6 @@
 @media only screen and (min-width: 65em) {
     main {
-        max-width: 900px;
-        margin: auto;
-    }
-
-    header, footer {
         max-width: 1000px;
+        margin: auto;
     }
 }
