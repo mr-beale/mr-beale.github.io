@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar&family=Work+Sans:wght@600&display=swap');
+
+body {
+    font-family: "Akshar", Arial, Helvetica;
+    font-size: 1.2em;
+    background: #ccc;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Work Sans', sans-serif;
+    margin: 5px;
+}
+
+.title h1 {
+    font-size: 1.8em;
+}
+
+.title h2 {
+    font-size: 1.2em;
+}
+
+.title {
+    margin:  30px 10px;
+    text-align: left;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    min-width: 400px;
+    margin: 0 auto;
+    background-color: #3066BE;
+    text-align: center;
+    color: #fff;
+}
+
+.logo-box {
+    justify-self: right;
+}
+
+.logo-box img{
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+nav {
+    background-color: #FCF7F8;
+    width: 100%;
+    grid-column: 1/-1;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.menu li:first-child {
+    display: block
+}
+
+.menu li {
+   display: none;
+}
+
+.menu a {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.menu a:hover {
+    background-color: #CED3DC;
+}
+
+.responsive li {
+    display: block;
+}
+
+footer {
+    min-width: 400px;
+    margin: 0 auto;
+    background-color: #3066BE;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 0.8em;
+}
+
+footer a {
+    color: #fff;
+}
+
+.placeholder {
+    border: 2px solid #000;
+    padding: 10px;
+    margin: 10px;
+}
