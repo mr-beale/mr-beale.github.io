@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 45em) {
     header {
         display: grid;
         grid-template-columns: 170px 1fr
@@ -26,8 +26,65 @@
         display: none;
     }
 
-    main {
+    main, .info {
         max-width: 800px;
         margin: auto;
     }
+
+    .summary {
+      width: 250px;
+      height: 150px;
+      position: absolute;
+      bottom: 5%;
+      left: 5%;
+      opacity: 0.9;
+      border-radius: .5em;
+    }
+
+    article {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+  }
+
+    article img {
+      grid-row: 2/3;
+      grid-column: 2/3;
+      padding: 10px;
+    }
+
+    article p {
+      grid-row: 2/3;
+      grid-column: 1/2;
+      padding: 20px;
+    }
+
+    .info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .info iframe {
+      justify-self: center;
+  }
+  
+  .contact {
+      justify-self: center;
+      padding: 5px;
+  }
+
+    .bar {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+    }
+
+    #copy {
+      justify-self: left;
+      padding: 5px 10px;
+    }
+
+    #updated {
+      justify-self: right;
+      padding: 5px 10px;
+    }
+
 }
