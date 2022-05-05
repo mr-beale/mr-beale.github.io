@@ -41,22 +41,26 @@
 
       <main>
         <section class="banner">
-          <img class="hero" alt="Preston Mountain View" src="images/preston.jpg"/>
+          <picture>
+            <source media="(min-width:600px) and (max-width: 999px)" srcset="images/wdd230_image_franklin_med.jpg">
+            <source media="(min-width: 1000px)" srcset="images/wdd230_image_franklin_Large.jpg">
+            <img src="images/wdd230_image_franklin_small.jpg" alt="Franklin, ID landscape" style="width:100%;">
+          </picture>
           <div class="summary">
             <h3>Weather Summary</h3>
               <ul class="labels">
                 <li>Currently:</li>
-                <li>High:</li>
                 <li>Wind Chill:</li>
+                <li>High:</li>
                 <li>Humidity:</li>
                 <li>Wind Speed:</li>
               </ul>
               <ul class="values">
-                <li>Sunny</li>
-                <li>26&#730;F</li>
-                <li>2&#730;F</li>
-                <li>69%</li>
-                <li>5 mph</li>
+                <li><span id="temp">38</span>&#730;F</li>
+                <li><span id="chill"></span></li>
+                <li>68&#730;F</li>
+                <li>50%</li>
+                <li><span id="wind">5</span>&nbsp;mph</li>
               </ul>
           </div>
         </section>
@@ -95,8 +99,8 @@
           <img alt="Preston Rodeo" src="images/rodeo.jpg"/>
           <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
         </article>
-        
       </main>
+
       <footer>
         <section class="info">
           <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d47366.405097752955!2d-111.88119176367185!3d42.09889653929084!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1651601005386!5m2!1sen!2sus" title="map" width="300" height="210" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -116,6 +120,7 @@
       </footer>
   
       <script src="js/scripts.js"></script>
+      <script src="js/windchill.js"></script>
   </body>
 
   </html>
