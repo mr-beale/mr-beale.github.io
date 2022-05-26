@@ -1,6 +1,16 @@
 @media only screen and (min-width: 65em) {
-    main, .info {
-        max-width: 1000px;
+    main, .info, .content-grid {
+        max-width: 1400px;
         margin: auto;
     }
+
+    .content-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+      }
+
+    .gallery:hover {
+        box-shadow: 0 0 50px #999;
+    }
+  
 }

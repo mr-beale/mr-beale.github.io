@@ -169,14 +169,14 @@ main {
     padding: 5px 10px;
 }
 
-article {
+.left {
     background-color: #FCF7F8;
     padding: 15px;
     margin: 20px;
     border-radius: 10px;
     text-align: center;
 }
-article h2 {
+.left h2 {
     text-decoration: underline;
     color: #EC4E20 
   }
@@ -220,3 +220,34 @@ footer a {
     width: 100%;
     margin: 0;
 }
+
+.content-grid {
+    margin: auto;
+    padding: 20px 0;
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    justify-items: center;
+    
+  }
+  
+  .gallery {
+    background-color: #FCF7F8;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .gallery img[data-src] {
+    filter: blur(0.2em)
+  }
+
+  .gallery img {
+    border-radius: 5px;
+    filter: blur(0em);
+    transition: filter 3.0s;
+  }
+
+ 
