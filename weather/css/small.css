@@ -126,6 +126,18 @@ main {
     text-decoration: underline;
 }
 
+#todayimg, #description {
+    align-self: center;
+}
+
+#todayimg {
+    justify-self: left;
+}
+
+#description {
+    justify-self: right;
+}
+
 .labels, .values {
     list-style-type: none;
     padding: 5px 10px;

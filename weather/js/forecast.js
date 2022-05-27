@@ -61,15 +61,17 @@ fetch(todayapiURL)
 
         const current = jsObject.main.temp;
         const windspeed = jsObject.wind.speed;
-        const max_temp = jsObject.main.temp_max;
         const humidity = jsObject.main.humidity;
+        const summary = jsObject.weather[0].description;
+        const icon = jsObject.weather[0].icon;
 
         chill = chillfactor(temp, windspeed);
         document.getElementById('temp').textContent = parseInt(current);
         document.getElementById('wind').textContent = parseInt(windspeed);
-        document.getElementById('high').textContent = parseInt(max_temp);
         document.getElementById('humidity').textContent = humidity;
         document.getElementById('chill').innerHTML = chill;
+        document.getElementById('description').textContent = summary;
+        document.getElementById('todayimg').src = 'https://openweathermap.org/img/w/' + icon + '.png';
     });
 
 
