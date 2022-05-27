@@ -153,15 +153,14 @@ main {
 }
 
 .five-days {
+    background-color: #FCF7F8;
     text-align: center;
     justify-content: center;;
     min-width: 90px;
     border: 1px solid #000;
 }
 
-.five-days span {
-    color: #EC4E20;
-}
+
 
 .weekday {
     background: #3066BE;
