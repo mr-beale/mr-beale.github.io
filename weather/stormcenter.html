@@ -15,9 +15,6 @@
   </head>
 
   <body>
-      <div id="announcement">
-        <p>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavillion"</p>
-      </div>
       <header>
         <div class="logo-box">
             <img id="logo" src="images/cdd.png" alt="Cloud Dandruff logo"/>
@@ -29,7 +26,7 @@
         <nav>
             <ul class="menu">
                 <li><a class="toggle" onclick="toggleMenu()" href="#">&#9776; Menu</a></li>
-                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="preston.html">Preston</a></li>
                 <li><a href="sodasprings.html">Soda Springs</a></li>
                 <li><a href="fishhaven.html">Fish Haven</a></li>
@@ -39,65 +36,70 @@
         </nav>
       </header>
 
-      <main>
-        <form>
+      <main class="content">
+        <h2>Weather Condidtion Reporting</h2><hr>
+        <form onsubmit="return submitted()">
             <fieldset id="personal">
                 <legend>Contact Info</legend>
             
-                <label for="flname">Full Name
-                <input type="text" name="flname" pattern="[A-Za-z].{4,}" required></label>
+                <label for="flname">Full Name</label>
+                <input id="flname" type="text" name="flname" pattern="[A-Za-z].{4,}" required>
 
-                <label for="email">Email
-                <input type="email" name="email" placeholder="you@youremail.com"></label>
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" placeholder="you@youremail.com">
 
-                <label for="phone">Phone Number
-                <input type="tel" name="phone" required></label>
+                <label for="phone">Phone Number</label>
+                <input id="phone" type="tel" name="phone" required>
 
-                <label for="zip">ZIP Code
-                <input type="text" name="zip" pattern="[0-9]{5}" required></label>
+                <label for="zip">ZIP Code</label>
+                <input id="zip" type="text" name="zip" pattern="[0-9]{5}" required>
             </fieldset>
 
             <fieldset id="storm">
                 <legend>Storm Information</legend>
-                <label for="stormDate">Date
-                <input type="date" name="stormDate"></label>
+                <label for="stormDate">Date</label>
+                <input id="stormDate" type="date" name="stormDate">
 
-                <label for="stormType">Type
+                <label for="location">Region</label>
+                <select id="location" name="location">
+                    <option value="placeholder" selected disabled>Select Region</option>
+                    <option value="Preston">Preston</option>
+                    <option value="SodaSprings">Soda Springs</option>
+                    <option value="FishHaven">Fish Haven</option>
+                </select>
+
+                <label for="stormType">Type</label>
                 <input list="stormTypes" id="stormType" name="stormType">
                 <datalist id="stormTypes">
-                    <option value="Flash Flood"">
+                    <option value="Flash Flood">
                     <option value="Hail">
                     <option value="Hurricane">
                     <option value="Thunderstorm">
                     <option value="Tornado">
                 </datalist>
-                </label>
+                
 
-                <label for="severity">Severity
-                <input type="range" name="severity" min="1" max="10" value="5" step="1"
-                    onchange="setSeverity(this.value)"><span id="severity">5</span></label>
+                <label for="slider">Severity</label>
+                <div>
+                <input id="slider" type="range" name="severity" min="1" max="10" value="5" step="1"
+                    onchange="setSeverity(this.value)"><span class="severity">5</span></div>
 
-                <label for="location">Region
-                <select name="location">
-                    <option value="placeholder" selected disabled>Select Region</option>
-                    <option value="Preston">Preston</option>
-                    <option value="SodaSprings">Soda Springs</option>
-                    <option value="FishHaven">Fish Haven</option>
-                </select></label>
 
-                <label for="danger">User in Danger
-                <label for="yes">Yes
-                <input type="radio" name="danger" id="yes" value="yes"></label>
-                <label for="yes">Maybe
-                <input type="radio" name="danger" id="maybe" value="maybe"></label>
-                <label for="yes">No
-                <input type="radio" name="danger" id="no" value="no"></label></label>
+                <div class="label">User in Danger</div>
+                <div class="danger">
+                <div class="radio"><label for="yes">Yes</label>
+                <input type="radio" name="danger" id="yes" value="yes"></div>
+                <div class="radio"><label for="yes">Maybe</label>
+                <input type="radio" name="danger" id="maybe" value="maybe"></div>
+                <div class="radio"><label for="yes">No</label>
+                <input type="radio" name="danger" id="no" value="no"></div>
+                </div>
 
-                <label for="comments">Comments
-                <input type="textarea" name="comments"></label>
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments" placeholder="Additonal comments or information."></textarea>
             </fieldset>
 
-            <input type="submit" name="submit">
+            <input type="submit" name="submit" class="submit">
         </form>
       </main>
 

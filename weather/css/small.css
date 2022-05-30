@@ -115,11 +115,14 @@ main {
     padding: 0;
 }
 
-.summary {
+.summary, .stats {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: #ABA9C3;
     padding: 10px;
+}
+
+.summary {
+    background: #ABA9C3;
 }
 
 .summary h3 {
@@ -154,6 +157,7 @@ main {
 .values {
     justify-self: left;
     color: #EC4E20;
+    text-align: left;
 }
 
 .forcast {
@@ -182,14 +186,14 @@ main {
     padding: 5px 10px;
 }
 
-.left {
+.left, .right {
     background-color: #FCF7F8;
     padding: 15px;
     margin: 20px;
     border-radius: 10px;
     text-align: center;
 }
-.left h2 {
+.left h2, .right h2 {
     text-decoration: underline;
     color: #EC4E20 
   }
@@ -207,7 +211,7 @@ footer p {
 }
 
 footer a {
-    color: #ff0000;
+    color: #EC4E20;
 }
 
 .info {
@@ -234,7 +238,7 @@ footer a {
     margin: 0;
 }
 
-.content-grid {
+.content-grid, .towns{
     margin: auto;
     padding: 20px 0;
     max-width: 600px;
@@ -245,12 +249,13 @@ footer a {
     
   }
   
-  .gallery {
+  .gallery, .town {
     background-color: #FCF7F8;
     padding: 10px;
     margin: 5px;
     text-align: center;
     border-radius: 10px;
+    width: 400px;
   }
   
   .gallery img[data-src] {
@@ -263,4 +268,78 @@ footer a {
     transition: filter 3.0s;
   }
 
- 
+ .town {
+     display: grid;
+     grid-template-columns: 1fr;
+ }
+
+ .town h3 {
+     font-size: 0.8em;
+ }
+
+ form {
+     width: 100%;
+     max-width: 600px;
+     min-width: 400px;
+     text-align: center;
+     margin: 10px auto;
+ }
+
+ #storm, #personal{
+     grid-template-columns: 1fr 3fr;
+     display: grid;
+     grid-gap: 10px 5px;
+     margin: 10px 0;
+ }
+
+ label, .label {
+     grid-column: 1/2;
+     text-align: right;
+ }
+
+.submit {
+     grid-column: 1/3;
+     width: 90%;
+     padding: 10px;
+ }
+
+ #slider {
+     width: 90%;
+     margin-right: 10px;
+ }
+
+ #comments {
+     height: 100px;
+ }
+
+ .radio {
+     display: inline;
+     margin: 0 30px;
+ }
+
+ fieldset {
+     border-radius: 10px;
+     border: 1px solid #999;
+ }
+
+ input {
+     border-radius: 5px;
+     border: 1px solid #999;
+ }
+
+ .thanks {
+     display: grid;
+     height: 50vh;
+     min-height: 300px;
+     text-align: center;
+     align-content: center;
+     color: #EC4E20;
+ }
+.content {
+    text-align: center;
+}
+
+ .content h2 {
+     text-align: center;
+     color: #EC4E20;
+ }
