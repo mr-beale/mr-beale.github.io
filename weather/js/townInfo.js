@@ -1,18 +1,17 @@
 const infoURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 const active = document.querySelector(".active").textContent;
-console.log(active);
 
 
 fetch(infoURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
 
         towns = jsObject.towns.filter(function(town) {return town.name == "Preston" || town.name == "Soda Springs" || town.name == "Fish Haven"});
-        console.log(towns);
 
         if (active == "Home") {
             towns.reverse().forEach(townInfo);
+        } else {
+            events(towns);
         };
     });
 
@@ -73,3 +72,41 @@ fetch(infoURL)
         document.querySelector('.towns').appendChild(article);
     
     };
+
+
+    function events(towns) {
+        let town = towns.filter(function(town) {return town.name == active});
+
+        if (town[0].events.length > 0) {
+            const EventInfo = document.querySelector('.townEvents')
+
+            const title = document.createElement("h3");
+            title.textContent = "Annual Events";
+        
+            const dates = document.createElement("ul");
+            dates.className = "labels";
+    
+            const Events = document.createElement("ul");
+            Events.className = "values";
+
+            EventInfo.appendChild(title);
+            EventInfo.appendChild(dates);
+            EventInfo.appendChild(Events);
+    
+            town[0].events.forEach( function(event) {
+                let broken = event.split(": ");
+    
+                const date = document.createElement("li");
+                date.textContent = broken[0]+":";
+        
+                const description = document.createElement("li");
+                description.textContent = broken[1];
+                
+                dates.appendChild(date);
+                Events.appendChild(description);
+            });
+        } else {
+            return false;
+        };
+    };
+

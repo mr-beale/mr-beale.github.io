@@ -4,7 +4,6 @@ function setSeverity(severity) {
 
 function submitted() {
     window.location.href="thanks.html";
-    console.log("Redirecting");
     return false;
 };
 

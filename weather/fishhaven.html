@@ -42,23 +42,24 @@
       <main>
         <section class="banner">
           <picture>
-            <source media="(min-width:600px) and (max-width: 999px)" srcset="images/wdd230_image_franklin_med.jpg">
-            <source media="(min-width: 1000px)" srcset="images/wdd230_image_franklin_Large.jpg">
-            <img src="images/wdd230_image_franklin_small.jpg" alt="Franklin, ID landscape" style="width:100%;">
+            <source media="(min-width:600px) and (max-width: 999px)" srcset="images/fishhaven-med.jpg">
+            <source media="(min-width: 1000px)" srcset="images/fishhaven-large.jpg">
+            <img src="images/fishhaven.jpg" alt="Fish Haven, ID landscape" style="width:100%;">
           </picture>
           <div class="summary">
             <h3>Weather Summary</h3>
+            <span id="description">-</span>
+            <img id="todayimg" src="#" alt="-">
               <ul class="labels">
+                <li></li>
                 <li>Currently:</li>
                 <li>Wind Chill:</li>
-                <li>High:</li>
                 <li>Humidity:</li>
                 <li>Wind Speed:</li>
               </ul>
               <ul class="values">
                 <li><span id="temp">38</span>&#730;F</li>
                 <li><span id="chill"></span></li>
-                <li><span id="high">68</span>&#730;F</li>
                 <li><span id="humidity"></span>%</li>
                 <li><span id="wind">5</span>&nbsp;mph</li>
               </ul>
@@ -94,10 +95,35 @@
             </div>
           </div>
         </section>
+        <section class="townEvents">
+
+        </section>
         <article class="left">
-          <h2>Get Ready for the Rodeo!</h2>
-          <img alt="Preston Rodeo" src="images/rodeo.jpg"/>
-          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+          <h2>Lost Girl Found With Treasure</h2>
+          <img alt="Preston Rodeo" src="images/treasure.jpg"/>
+          <p>Yesterday afternoon was a rainy day filled with dark skies and lightning. Yet, that did not stop the town
+            of Fish Haven from celebrating a miracle that has brought smiles and excitement to not just our town
+            but to the loved ones of Sally Field. Four days, before the smiles of the Fish Haven citizens brought
+            sunshine to the otherwise rainy day, a vigil was held for Ms. Fields who had been missing after she and
+            her friends were out hiking and treasure hunting for the Butch Cassidy’s treasure on the border of Fish
+            Haven and Soda Springs. While exploring, the teens decided to leave the trails for the sake of adventure
+            and came across a bear that caused Sally to be separated from her group. In her words, Sally describes
+            how she was separated;</p>
+
+            <blockquote><i>“I remember running when we saw the bear, I thought my friends were behind me
+            but when I turned around and before I could see if they had followed me I fell down a
+            hill and became knocked out. When I got up I was at the entrance of a cave.
+            Curiosity got the better of me and I decided to search the cave, it’s what I had been
+            out there to do anyway.”</i></blockquote>
+
+            <p>This terrifying experience was soon eclipsed by the excitement of finding the lost treasure of
+            Butch Cassidy. However, a bear was not the only thing Sally had to face. There was the matter of other
+            treasure hunters. Soon after finding the treasure, Sally was kidnapped by some less-than-friendly
+            treasure hunters who wanted the treasure for themselves. Using her wits and the surprising help from a
+            squirrel Sally was able to free herself and was rescued by one of the volunteers for her search party.
+            Currently, Sally has been reunited with her friends and family and has been given official credit for
+            finding the treasure. As for the less-than-friendly treasure hunters, they’ll be spending time behind bars
+            and as far away from the treasure as possible.</p>
         </article>
       </main>
 
@@ -105,7 +131,7 @@
         <section class="info">
           <img src="images/map.jpg" alt="area map">
           <div class="contact">
-            <h4>Get in Touch</h4><hr>
+            <h3>Get in Touch</h3><hr>
             <ul>
               <li>Email: weather@cloud-dandruff.com</li>
               <li>Phone: 012-345-6789</li>
@@ -121,6 +147,7 @@
   
       <script src="js/scripts.js"></script>
       <script src="js/forecast.js"></script>
+      <script src="js/townInfo.js"></script>
   </body>
 
   </html>

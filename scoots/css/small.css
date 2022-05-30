@@ -1,0 +1,287 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url("https://fonts.googleapis.com/css2?family=Karla&family=Rubik:wght@700&display=swap");
+
+
+
+body {
+  background-color: #ebebeb;
+  font-family: "Karla", Helvetica, sans-serif;
+  font-size: 1.2em;
+  margin: 0 10px;
+}
+
+#content {
+  max-width: 1400px;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 15px 20px #999;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rubik", serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  color: #ff521b;
+  padding: 20px 0;
+  align-self: center;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 150px 1fr 2fr;
+  align-items: end;
+}
+
+.logo-box img {
+  width: 125px;
+  padding: 0 5px;
+}
+
+nav {
+  justify-self: right;
+  padding-bottom: 10px;
+}
+
+nav ul li {
+  display: inline;
+  padding: 10px 25px;
+}
+
+nav ul a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #2d2d2a;
+  margin: auto;
+}
+
+nav ul a:hover {
+  color: #ff521b;
+}
+
+.page-banner {
+  display: grid;
+  align-items: center;
+  background: linear-gradient(90deg, #2d2d2a 0%, #2f52e0 30%, #2f52e0 70%, #2d2d2a 100%);
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 5px 10px #999;
+
+  border-top: 4px solid #2d2d2a;
+  min-width: 400px;
+}
+
+.page-banner img {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+.page-banner h1 {
+  padding-top: 20px; 
+}
+
+.page-banner h3{
+  padding-bottom: 20px;
+}
+
+.action {
+  padding: 20px;
+  width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.button {
+  display: block;
+  background-color: #ff521b;
+  padding: 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #fff;
+  width: 210px;
+  margin: auto;
+  border: 0;
+  font-size: 18px;
+}
+
+.button:hover {
+  background-color: #eb3900;
+}
+
+.action img {
+  width: 600px;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #ebebeb;
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  align-items: center;
+  padding: 10px;
+}
+
+footer p {
+  margin: 0;
+}
+
+.content-grid {
+  margin: auto;
+  padding: 20px 0;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  justify-items: center;
+}
+
+.puppy {
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 0 15px 20px #999;
+  text-align: center;
+}
+
+.puppy img {
+  border-radius: 10px;
+  width: 275px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 1000px;
+  margin: 20px auto;
+  justify-items: center;
+  text-align: center;
+}
+
+.side-banner {
+  grid-column: 1;
+  grid-row: 1/3;
+}
+
+form, .contact-grid p, .bottom-banner {
+  grid-column: 2;
+}
+
+.bottom-banner {
+  width: 100%;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 100px 2fr;
+  width: 500px;
+  margin-bottom: 1em;
+}
+
+label {
+  grid-column: 1;
+  text-align: right;
+  margin-top: 10px;
+}
+
+input, select, textarea, .contact-grid .button {
+  grid-column: 2;
+  margin: 10px 0 2px 10px;
+}
+
+.contact-grid .button {
+  justify-self: center;
+}
+
+textarea {
+  height: 150px;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .content-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  header {
+    grid-template-columns: 150px 1fr;
+  }
+
+  .logo-box {
+    grid-row: 1/3;
+  }
+
+  header h {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  nav {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  nav ul li {
+    padding: 10px 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .page-banner {
+    font-size: .7em;
+  }
+  
+  .contact-grid{
+    display: block;
+  }
+  
+  form {
+    width: 400px;
+    margin: auto;
+  }
+  
+  .contact-grid .button {
+    grid-column: 1/3;
+  }
+  
+  .action {
+    max-width: 400px;
+    margin: auto;
+    padding: 0;
+  }
+  
+  .action img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content-grid {
+    display: block;
+    max-width: 350px;
+  }
+  
+  nav {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: left;
+    font-size: .8em;
+  }
+}

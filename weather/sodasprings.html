@@ -42,23 +42,24 @@
       <main>
         <section class="banner">
           <picture>
-            <source media="(min-width:600px) and (max-width: 999px)" srcset="images/wdd230_image_franklin_med.jpg">
-            <source media="(min-width: 1000px)" srcset="images/wdd230_image_franklin_Large.jpg">
-            <img src="images/wdd230_image_franklin_small.jpg" alt="Franklin, ID landscape" style="width:100%;">
+            <source media="(min-width:600px) and (max-width: 999px)" srcset="images/sodasprings-med.jpg">
+            <source media="(min-width: 1000px)" srcset="images/sodasprings-large.jpg">
+            <img src="images/sodasprings.jpg" alt="Soda Springs, ID landscape" style="width:100%;">
           </picture>
           <div class="summary">
             <h3>Weather Summary</h3>
+            <span id="description">-</span>
+            <img id="todayimg" src="#" alt="-">
               <ul class="labels">
+                <li></li>
                 <li>Currently:</li>
                 <li>Wind Chill:</li>
-                <li>High:</li>
                 <li>Humidity:</li>
                 <li>Wind Speed:</li>
               </ul>
               <ul class="values">
                 <li><span id="temp">38</span>&#730;F</li>
                 <li><span id="chill"></span></li>
-                <li><span id="high">68</span>&#730;F</li>
                 <li><span id="humidity"></span>%</li>
                 <li><span id="wind">5</span>&nbsp;mph</li>
               </ul>
@@ -94,10 +95,26 @@
             </div>
           </div>
         </section>
-        <article class="left">
-          <h2>Get Ready for the Rodeo!</h2>
-          <img alt="Preston Rodeo" src="images/rodeo.jpg"/>
-          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        <section class="townEvents">
+
+        </section>
+        <article class="right">
+          <h2>Vigil held for Local Girl Tonight</h2>
+          <img alt="Preston Rodeo" src="images/vigil.jpg"/>
+          <p>This evening a vigil will be held in honor of Sally Fields, daughter of Marc Anderson and Bethany Fields.
+            Sally has been missing since early Monday morning. The tragedy all started six weeks ago when a map
+            was made public to the community in Preston, Idaho. Sally Fields, who was staying with her father for
+            the summer, and several other friends had decided to beat summer boredom by seeking the alleged
+            treasure of Butch Cassidy.</p>
+
+          <p>The map led Sally and her friends to some hiking trails in Soda Springs.
+            However, when the kids did not report back to their parents after several hours it was Sally’s mom,
+            Bethany Fields, who called to alert authorities. Four of the five children were found lost after leaving the
+            trails but Sally was not with them. Authorities are still investigating what may have led to Sally’s
+            disappearance. Search parties have been ongoing and Authorities are asking for any volunteers who
+            know the hiking trails to help.</p>
+          <p>The candlelight vigil will be held on the steps of the town hall this evening
+            at 8:30 pm.</p>
         </article>
       </main>
 
@@ -105,7 +122,7 @@
         <section class="info">
           <img src="images/map.jpg" alt="area map">
           <div class="contact">
-            <h4>Get in Touch</h4><hr>
+            <h3>Get in Touch</h3><hr>
             <ul>
               <li>Email: weather@cloud-dandruff.com</li>
               <li>Phone: 012-345-6789</li>
@@ -121,6 +138,7 @@
   
       <script src="js/scripts.js"></script>
       <script src="js/forecast.js"></script>
+      <script src="js/townInfo.js"></script>
   </body>
 
   </html>

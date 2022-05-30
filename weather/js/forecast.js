@@ -16,7 +16,6 @@ if (today == "Friday") {
 const apiKey = "a6ce570f8b96f7a0437a5c9479fe91c7";
 
 city = document.querySelector(".active").innerHTML;
-console.log(city);
 
 let cityID = "";
 
@@ -36,10 +35,8 @@ const theDays = theForcast.children;
 fetch(fivedayapiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
 
     days = jsObject.list.filter(function(day) {return day.dt_txt.includes("18:00:00") });
-    console.log(days);
 
     for (i = 0; i < theDays.length; i++) {
         const icon = days[i].weather[0].icon;
@@ -57,7 +54,6 @@ fetch(fivedayapiURL)
 fetch(todayapiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
 
         const current = jsObject.main.temp;
         const windspeed = jsObject.wind.speed;
@@ -80,7 +76,6 @@ function chillfactor(temp, windspeed) {
   if (temp < 51 && windspeed > 2.9) {
     const speed = windspeed**0.16;
     let windchill = 35.74 + 0.6215 * temp - 35.75 * speed + 0.4275 * temp * speed;
-    console.log(windchill);
         windChill = Math.round(windchill) + "&#730;F";
   } else {
         windChill = "N/A";
