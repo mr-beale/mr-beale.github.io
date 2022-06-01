@@ -1,0 +1,29 @@
+@media only screen and (min-width: 87.5em) {
+    #content {
+        max-width: none;
+        width: 1400px;
+    }
+
+    .call {
+        top: 35%
+    }
+
+    .reservation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      
+      .reservation h2 {
+        grid-row: 1/2;
+        grid-column: 1/-1;
+      }
+
+      #notes {
+          min-height: 40px;
+          max-height: 85px
+      }
+      
+      .submit {
+        grid-column: 1/-1;
+      }
+}

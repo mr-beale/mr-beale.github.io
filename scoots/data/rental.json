@@ -1,0 +1,118 @@
+{"rentals": [
+    {"type" : "Honda Metropolitan",
+        "ID" : "metro",
+        "passengers" : "1",
+        "image" : "metro.jpg",
+        "reservationRates" : {
+           "halfDay" : "$20.00",
+            "fullDay" : "$30.00"
+           },
+        "walkInRates" : {
+           "halfDay" : "$25.00",
+            "fullDay" : "$35.00"
+           },
+         "comments": [
+            "Engine: 49cc",
+            "Under-Seat Storage"
+         ],
+         "mostPopular" : "false",
+         "bestValue" : "false",
+         "description": "Perfect for day trips and urban travel. This scooter accomodates 1 rider. The under seat storage allows you to pack gear for a fun filled afternoon!"
+       },
+    {"type" : "Honda Dio",
+        "ID" : "dio",
+        "passengers" : "2",
+        "image" : "dio.jpg",
+        "reservationRates" : {
+           "halfDay" : "$30.00",
+            "fullDay" : "$40.00"
+           },
+        "walkInRates" : {
+           "halfDay" : "$35.00",
+            "fullDay" : "$45.00"
+         },
+         "comments": [
+            "Engine: 110cc",
+            "Under-Seat Storage"
+         ],
+         "mostPopular" : "false",
+         "bestValue" : "false",
+         "description" : "Perfect for day trips and urban travel. This scooter accomodates 1 rider. The under seat storage allows you to pack gear for a fun filled afternoon!"
+       },
+    {"type" : "Honda PCX150",
+        "ID" : "pcx",
+        "passengers" : "2",
+        "image" : "pcx150.jpg",
+        "reservationRates" : {
+           "halfDay" : "$40.00",
+            "fullDay" : "$50.00"
+           },
+        "walkInRates" : {
+           "halfDay" : "$45.00",
+            "fullDay" : "$55.00"
+         },
+         "comments": [
+            "Engine: 149cc",
+            "Under-Seat Storage",
+            "Optional Hard Case Storage available"
+         ],
+         "mostPopular" : "false",
+         "bestValue" : "false"
+       },
+    {"type" : "Honda Pioneer",
+        "ID" : "pioneer",
+        "passengers" : "4",
+        "image" : "pioneer.jpg",
+        "reservationRates" : {
+           "halfDay" : "$50.00",
+            "fullDay" : "$70.00"
+           },
+        "walkInRates" : {
+           "halfDay" : "$60.00",
+            "fullDay" : "$80.00"
+         },
+         "comments": [
+            "Engine: 1000cc",
+            "Off-Road Ready"
+         ],
+         "mostPopular" : "true",
+         "bestValue" : "false"
+       },
+     {"type" : "Jeep Wrangler - 2 Door",
+         "ID" : "jw2",
+         "passengers" : "4",
+         "image" : "jw-2.jpg",
+         "reservationRates" : {
+            "halfDay" : "$60.00",
+             "fullDay" : "$85.00"
+            },
+         "walkInRates" : {
+            "halfDay" : "$70.00",
+             "fullDay" : "$90.00"
+          },
+          "comments": [
+             "Available in Hard or Soft Top"
+          ],
+          "mostPopular" : "false",
+          "bestValue" : "false"
+      },
+    {"type" : "Jeep Wrangler - 4 Door",
+        "ID" : "jw4",
+        "passengers" : "5",
+        "image" : "jw-4.jpg",
+        "reservationRates" : {
+           "halfDay" : "$70.00",
+            "fullDay" : "$100.00"
+           },
+        "walkInRates" : {
+           "halfDay" : "$85.00",
+            "fullDay" : "$125.00"
+         },
+         "comments": [
+            "Air Conditioning",
+            "Available in Hard or Soft Top"
+         ],
+         "mostPopular" : "false",
+         "bestValue" : "true"
+       }
+]}

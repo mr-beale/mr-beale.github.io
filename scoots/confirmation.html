@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Joshua A. Beale">
+		<meta name="description" content="Form Submission confirmation">
+		<title>Scoots Motor Rentals | Sumbitted</title>
+		<link rel="stylesheet" href="css/small.css">
+		<link rel="stylesheet" href="css/med.css">
+		<link rel="stylesheet" href="css/large.css">
+	</head>
+
+	<body onload="redirect()">
+
+		<div id="content" class="thanks">
+			<header>
+
+				<div class="logo-box">
+					<img alt="Scoots Logo" src="images/logo.png">
+				</div>
+
+				<h2>Scoots</h2>
+
+			</header>
+
+			<main>
+
+				<div class="action">
+					<picture>
+						<source media="(min-width:600px) and (max-width: 999px)" srcset="images/cozumel-med.jpg">
+						<source media="(min-width: 1000px)" srcset="images/cozumel-lg.jpg">
+						<img src="images/cozumel.jpg" alt="Preston, ID landscape" style="width:100%;">
+					  </picture>
+					</div>
+				
+				<section class="main-content message">
+					<h2>Thank You!</h2>
+					<h3>Your Form has been submitted.</h3>
+					<h4>We will contact you shortly.</h4>
+				</section>
+			</main>
+
+			<footer>
+				<p>©<span id="year"></span> Scoots Motor Rentals</p>
+				<p id="updated"></p>
+			</footer>
+
+		</div>
+
+		<script src="js/scripts.js"></script>
+
+	</body>
+  
+</html>

@@ -1,101 +1,156 @@
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Labratory Kennel | Home</title>
-    <link rel="stylesheet" href="css/small.css" />
-  </head>
 
-  <body>
-    <div id="content">
-      <header>
-        <div class="logo-box">
-          <img
-            alt="Labratory Logo"
-            src="https://cdn.glitch.global/5836d8fc-c60f-483e-a5a7-7049cd0eed81/lab-min.png?v=1643920464799"
-          />
-        </div>
-        <h2>Scoots</h2>
-        <nav>
-          <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="rentals.html">RENTALS</a></li>
-            <li><a href="reservations.html">RESERVATIONS</a></li>
-            <li><a href="reservations.html">TOURS</a></li>
-            <li><a href="reservations.html">CONTACT</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <div class="page-banner">
-            <picture>
-                <source media="(min-width:600px) and (max-width: 999px)" srcset="images/cozumel-med.jpg">
-                <source media="(min-width: 1000px)" srcset="images/cozumel-lg.jpg">
-                <img src="images/cozumel.jpg" alt="Preston, ID landscape" style="width:100%;">
-              </picture>
-        </div>
-        <section class="slider">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Joshua A. Beale">
+		<meta name="description" content="Scoots Motor Rentals - Explore Cozumel">
+		<title>Scoots Motor Rentals | Home</title>
+		<link rel="stylesheet" href="css/small.css">
+		<link rel="stylesheet" href="css/med.css">
+		<link rel="stylesheet" href="css/large.css">
+	</head>
 
-        </section>
-        <section class="action">
-          <h2>Happenings at The Labratory</h2>
-          <p>
-            Our latest litter of puppies was born January 22. We have 10 healthy
-            puppies in need of homes. You can read about our puppies here.
-            Information will be updated as the puppies grow to help you choose
-            the best one for you.
-          </p>
-          <a class="button" href="reservations.html">Make A Reservation!</a>
-        </section>
-        <section class="rentalInfo">
-            
-        </section>
-        
-        <section class="weather">
-            <div class="summary">
-                <h3>Weather Summary</h3>
-                <img id="todayimg" src="#" alt="-">
-                  <ul class="labels">
-                    <li>Currently: </li>
-                    <li>Temperature:</li>
-                    <li>Humidity:</li>
-                  </ul>
-                  <ul class="values">
-                    <li><span id="description">-</span></li>
-                    <li><span id="temp">-</span>&#730;F</li>
-                    <li><span id="humidity">-</span>%</li>
-                  </ul>
-            </div>
-            <div class="forcast">
-            </div>
-        </section>
-          <img
-            alt="Dam with pups"
-            src="https://cdn.glitch.global/5836d8fc-c60f-483e-a5a7-7049cd0eed81/banner-min.jpg?v=1643921867846"
-          />
-        
-      </main>
-      <footer>
-        <p>&copy; 2022 Scoots Motor Rentals</p>
-        <div class="social">
-          <a href="http://facebook.com" target="_blank"
-            ><img
-              src="https://cdn.glitch.global/e827698b-f405-4470-9221-036adc429406/fb_icon.png?v=1642021242004"
-              alt="facebook icon"
-          /></a>
-          <a href="http://twitter.com" target="_blank"
-            ><img
-              src="https://cdn.glitch.global/e827698b-f405-4470-9221-036adc429406/tw_icon.png?v=1642021237099"
-              alt="twitter icon"
-          /></a>
-          <a href="http://youtube.com" target="_blank"
-            ><img
-              src="https://cdn.glitch.global/e827698b-f405-4470-9221-036adc429406/yt_icon.png?v=1642021232398"
-              alt="youtube icon"
-          /></a>
-        </div>
-      </footer>
-    </div>
-  </body>
+	<body>
+
+		<div id="content">
+
+			<header>
+
+				<div class="logo-box">
+					<img alt="Scoots Logo" src="images/logo.png">
+				</div>
+
+				<h2>Scoots</h2>
+
+				<nav>
+					<ul class="menu">
+						<li>
+							<a class="toggle" onclick="toggleMenu()" href="#">&#9776; Menu</a>
+						</li>
+						<li>
+							<a href="#" class="active">HOME</a>
+						</li>
+						<li>
+							<a href="rentals.html">RENTALS</a>
+						</li>
+						<li>
+							<a href="reservations.html">RESERVATIONS</a>
+						</li>
+						<li>
+							<a href="tours.html">TOURS</a>
+						</li>
+						<li>
+							<a href="contact.html">CONTACT</a>
+						</li>
+					</ul>
+				</nav>
+
+			</header>
+
+			<main>
+
+				<section class="action">
+					<picture>
+						<source media="(min-width:600px) and (max-width: 999px)" srcset="images/banner-med.jpg">
+						<source media="(min-width: 1000px)" srcset="images/banner-lg.jpg">
+						<img src="images/banner.jpg" alt="Preston, ID landscape" style="width:100%;">
+					  </picture>
+					<div class="call">
+						<h2>Get Away and Explore Cozumel!</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                           Eu non diam phasellus vestibulum lorem sed.</p>
+						<a class="button" href="reservations.html">Make A Reservation!</a>
+					</div>
+				</section>
+
+				<div class="content-grid">
+
+					<section class="main-content">
+						<h2>Something For Everyone</h2>
+						<p>We offer a variety of vehicles that are sure to meet your needs, from scooters for the solo traveler to full size SUV's for the adventuring family.
+						   No matter what your plans are we have the wheels to get there.</p>
+						<div class="categories left">
+							<img src="images/metro.jpg" alt="Scooter Rentals">
+							<p>Best suited for urban travel. We have scooters that can accomodate 1-2 riders. Each scooter has a large storage compartment under the seat for your daily gear.</p>
+						</div>
+						<div class="categories right">
+							<img src="images/pioneer.jpg" alt="UTV Rentals">
+							<p>Get off the path and discover the hidden beauty of Cozumel! Our UTV's are ready to hit the trail. Choose from 2 and 4 passenger options. It's no wonder that these are our most popular rentals.</p>
+						</div>
+						<div class="categories left">
+							<img src="images/jw-2.jpg" alt="Jeep Rentals">
+							<p>Prefer to explore without giving up modern comforts? Our jeeps come in 2 and 4 door options with seating for up to 5. Take the top down and feel the wind in your hair or leave it up and crank the A/C. This is the best value option for larger groups.</p>
+						</div>
+						<a class="rent" href="rentals.html">View Rentals</a>
+					</section>
+
+					<div class="sidebar">
+
+						<section class="weather">
+
+							<div class="summary">
+								<h3>Cozumel Weather</h3>
+								<img class="icon" src="#" alt="-">
+								<span class="description">-</span>
+								<ul class="labels">
+									<li>Temp:</li>
+									<li>Humidity:</li>
+								</ul>
+								<ul class="values">
+									<li>
+										<span class="temp">-</span>˚F</li>
+									<li>
+										<span class="humidity">-</span>%</li>
+								</ul>
+							</div>
+
+							<div class="forecast">
+							</div>
+
+						</section>
+
+						<section class="contactInfo">
+							<h4>Locations:</h4>
+							<h5>Playa del Carmen</h5>
+							<span>Phone: +52.123.456.7890</span>
+							<br>
+							<br>
+							<h5>Terminal Puerta Maya</h5>
+							<span>Phone: +52.987.654.3210</span>
+						</section>
+
+						<div class="social">
+							<a href="http://facebook.com" target="_blank">
+								<img class="fb" src="images/fb.png" alt="facebook icon">
+							</a>
+							<a href="http://youtube.com" target="_blank">
+								<img class="yt" src="images/yt.png" alt="youtube icon">
+							</a>
+							<a href="http://twitter.com" target="_blank">
+								<img class="tw" src="images/tw.png" alt="twitter icon">
+							</a>
+						</div>
+
+					</div>
+
+				</div>
+
+			</main>
+
+			<footer>
+				<p>©<span id="year"></span> Scoots Motor Rentals</p>
+				<p id="updated"></p>
+			</footer>
+
+		</div>
+
+		<script src="js/forecast.js"></script>
+		<script src="js/scripts.js"></script>
+
+	</body>
+  
 </html>

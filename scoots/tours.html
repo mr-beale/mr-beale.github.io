@@ -1,101 +1,127 @@
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Labratory Kennel | Home</title>
-    <link rel="stylesheet" href="css/small.css" />
-  </head>
 
-  <body>
-    <div id="content">
-      <header>
-        <div class="logo-box">
-          <img
-            alt="Labratory Logo"
-            src="https://cdn.glitch.global/5836d8fc-c60f-483e-a5a7-7049cd0eed81/lab-min.png?v=1643920464799"
-          />
-        </div>
-        <h2>Scoots</h2>
-        <nav>
-          <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="rentals.html">RENTALS</a></li>
-            <li><a href="reservations.html">RESERVATIONS</a></li>
-            <li><a href="reservations.html">TOURS</a></li>
-            <li><a href="reservations.html">CONTACT</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <div class="page-banner">
-            <picture>
-                <source media="(min-width:600px) and (max-width: 999px)" srcset="images/cozumel-med.jpg">
-                <source media="(min-width: 1000px)" srcset="images/cozumel-lg.jpg">
-                <img src="images/cozumel.jpg" alt="Preston, ID landscape" style="width:100%;">
-              </picture>
-        </div>
-        <section class="slider">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Joshua A. Beale">
+		<meta name="description" content="Venturing beyond the mainstream">
+		<title>Scoots Motor Rentals | Tours</title>
+		<link rel="stylesheet" href="css/small.css">
+		<link rel="stylesheet" href="css/med.css">
+		<link rel="stylesheet" href="css/large.css">
+	</head>
 
-        </section>
-        <section class="action">
-          <h2>Happenings at The Labratory</h2>
-          <p>
-            Our latest litter of puppies was born January 22. We have 10 healthy
-            puppies in need of homes. You can read about our puppies here.
-            Information will be updated as the puppies grow to help you choose
-            the best one for you.
-          </p>
-          <a class="button" href="reservations.html">Make A Reservation!</a>
-        </section>
-        <section class="rentalInfo">
-            
-        </section>
-        
-        <section class="weather">
-            <div class="summary">
-                <h3>Weather Summary</h3>
-                <img id="todayimg" src="#" alt="-">
-                  <ul class="labels">
-                    <li>Currently: </li>
-                    <li>Temperature:</li>
-                    <li>Humidity:</li>
-                  </ul>
-                  <ul class="values">
-                    <li><span id="description">-</span></li>
-                    <li><span id="temp">-</span>&#730;F</li>
-                    <li><span id="humidity">-</span>%</li>
-                  </ul>
-            </div>
-            <div class="forcast">
-            </div>
-        </section>
-          <img
-            alt="Dam with pups"
-            src="https://cdn.glitch.global/5836d8fc-c60f-483e-a5a7-7049cd0eed81/banner-min.jpg?v=1643921867846"
-          />
-        
-      </main>
-      <footer>
-        <p>&copy; 2022 Scoots Motor Rentals</p>
-        <div class="social">
-          <a href="http://facebook.com" target="_blank"
-            ><img
-              src="https://cdn.glitch.global/e827698b-f405-4470-9221-036adc429406/fb_icon.png?v=1642021242004"
-              alt="facebook icon"
-          /></a>
-          <a href="http://twitter.com" target="_blank"
-            ><img
-              src="https://cdn.glitch.global/e827698b-f405-4470-9221-036adc429406/tw_icon.png?v=1642021237099"
-              alt="twitter icon"
-          /></a>
-          <a href="http://youtube.com" target="_blank"
-            ><img
-              src="https://cdn.glitch.global/e827698b-f405-4470-9221-036adc429406/yt_icon.png?v=1642021232398"
-              alt="youtube icon"
-          /></a>
-        </div>
-      </footer>
-    </div>
-  </body>
-</html>
+	<body>
+
+		<div id="content">
+
+			<header>
+
+				<div class="logo-box">
+					<img alt="Scoots Logo" src="images/logo.png">
+				</div>
+
+				<h2>Scoots</h2>
+
+				<nav>
+					<ul class="menu">
+						<li>
+							<a class="toggle" onclick="toggleMenu()" href="#">&#9776; Menu</a>
+						</li>
+						<li>
+							<a href="index.html">HOME</a>
+						</li>
+						<li>
+							<a href="rentals.html">RENTALS</a>
+						</li>
+						<li>
+							<a href="reservations.html">RESERVATIONS</a>
+						</li>
+						<li>
+							<a href="#" class="active">TOURS</a>
+						</li>
+						<li>
+							<a href="contact.html">CONTACT</a>
+						</li>
+					</ul>
+				</nav>
+
+			</header>
+
+			<main>
+
+				<div class="action">
+					<picture>
+						<source media="(min-width:600px) and (max-width: 999px)" srcset="images/cozumel-med.jpg">
+						<source media="(min-width: 1000px)" srcset="images/cozumel-lg.jpg">
+						<img src="images/cozumel.jpg" alt="Preston, ID landscape" style="width:100%;">
+					  </picture>
+					</div>
+
+				<div class="content-grid">
+
+					<section class="main-content">
+						<h2>Adventure Is Waiting</h2>
+						<p>We offer vehicles that will truly help you get the most out of your stay in Cozumel. There are so many sights to see and things to do! There's an activity for every agenda and presonality. Which one will you choose?</p>
+						<div class="events left">
+							<h3>ATV Mud Kicking - <a href="https://www.viator.com/tours/Cozumel/ATV-Mud-kicking-and-Tortugas-Beach-Club-chill/d632-120878P1">viator.com</a></h3>
+							<img src="images/mud.jpg" alt="Mud Kicking">
+							<p>Get off road in the Cozumel jungles with this all-terrain vehicle tour. Follow your guide through the jungle to the Jade cenote, where you can take a dip and cool off.
+							   Wind up at a local beach club for some lounge time and a sailing excursion with snorkeling, lunch, and an open bar.
+							   This tour allows you to experience multiple water sports in a single day and has everything arranged for you.</p>
+						</div>
+						<div class="events right">
+							<h3>Private Jeep Excursion - <a href="https://www.viator.com/tours/Cozumel/Private-and-Customizable-Jeep-Excursion-in-Cozumel/d632-8916P1">viator.com</a></h3>
+							<img src="images/jeep-tour.jpg" alt="Private Jeep Excersion">
+							<p>Discover the jungle and beaches of Cozumel with just your family and friends on this private self-operated Jeep tour.
+							   Follow your guide from a separate vehicle and drive into a national park to learn about the local geology and Maya history.
+							   Continue to white-sand beaches for snorkeling and enjoy a delicious lunch.
+							   These are just some of the activities and sites available.
+							   Leave the routine tours behind and design your own itinerary to include horseback riding, shopping, more sightseeing and whatever else suits your interests.</p>
+						</div>
+						<div class="events left">
+							<h3>ATV Adventure to Jade Cavern - <a href="https://www.viator.com/tours/Cozumel/ATV-Ride-to-the-Jade-Cavern/d632-3386P12">viator.com</a></h3>
+							<img src="images/atv-adventure.jpg" alt="Jade Cavern - ATV Adventure">
+							<p>Don’t let time restraints prevent you from having an adventure. 
+							   Ride through the jungles of Cozumel on this ATV tour, providing just enough time for you to swim in a cenote and ride through a coral cave, all while learning about Maya culture.</p>
+						</div>
+						<div class="events right">
+							<h3>Mayan Jungle | Jade Caven Jeep Tour - <a href="https://www.viator.com/tours/Cozumel/Xrail-Buggy-Tour-in-Cozumel-with-Lunch-and-Snorkeling/d632-8916P2">viator.com</a></h3>
+							<img src="images/jungle-jeep.jpg" alt="Mayan Jungle - Jeep">
+							<p>Feel the breeze as you zip around Cozumel aboard a Jeep on this 5-hour tour.
+							   After receiving instructions from an informative guide, drive a jeep to Jade Cavern and other top island attractions.
+							   Follow this with snorkeling in beautiful clear waters and a satisfying lunch.
+							   Wrap up the day with a tour of an esteemed tequila factory, complete with tastings.
+							   Choose from several departure times to suit your schedule.</p>
+						</div>
+						<div class="events left">
+							<h3>Cozumel Buggy Tour - <a href="https://www.viator.com/tours/Cozumel/Cozumel-Self-Drive-Buggy-Tour-Snorkeling-and-Lunch/d632-6044COZDUNE">viator.com</a></h3>
+							<img src="images/buggy.jpg" alt="Beach Buggy">
+							<p>Ride along with your guide on a fun Cozumel excursion, includes manual transmission buggy, beach stop, bilingual guide, full snorkel gear and mexican lunch.
+								Enjoy a fun ride around the island. Relax at the beach while you savour a delicious fish ceviche at San Martin beach club,
+								then continue on the scenic coastal road towards the snorkel site located within the arrecifes de Cozumel national park.
+								Then visit a mexican restaurant for fajitas choose between chicken, beef or fish fajistas served with guacamole and salsas.
+								This activity is perfect for novice to advanced participants</p>
+						</div>
+
+						<a class="rent" href="rentals.html">Start Your Adventure</a>
+					</section>
+
+				</div>
+
+			</main>
+
+			<footer>
+				<p>©<span id="year"></span> Scoots Motor Rentals</p>
+				<p id="updated"></p>
+			</footer>
+
+		</div>
+
+		<script src="js/scripts.js"></script>
+
+	</body>
+  
+</html> 
